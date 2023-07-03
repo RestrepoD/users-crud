@@ -14,7 +14,7 @@ const UserList = ({ users, onEdit, onDelete }) => {
               </h2>
               <p className="user_email">{user.email}</p>
               <p className="user_birthday">
-                <i className="fa-solid fa-cake-candles"></i> {user.birthday}
+                <i className="fa-solid fa-cake-candles"></i> {user.birthday.slice(0, 10)}
               </p>
               <div className="user-list__btns_cont">
                 <button onClick={() => onEdit(user)}>Edit</button>
